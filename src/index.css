@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Echarts */
+:fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+:fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* Add a CSS class for highlighting */
+.highlight {
+  background-color: yellow;
+  color: #686767; /* Black text for proper visibility */
+  font-weight: bold;
+}
+
+@layer utilities {
+  .no-date-picker-icon::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none !important;
+  }
+
+  .no-date-picker-icon::-webkit-inner-spin-button {
+    display: none !important;
+    -webkit-appearance: none !important;
+  }
+}
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.sleek-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sleek-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sleek-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 20px;
+}
+
+.sleek-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Dark mode */
+.dark .sleek-scrollbar::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark .sleek-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* For Firefox */
+.sleek-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.dark .sleek-scrollbar {
+  scrollbar-color: #475569 transparent;
+}
