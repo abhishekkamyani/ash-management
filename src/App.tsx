@@ -1,10 +1,11 @@
-import FleetConfigPage from './page/fleet-config/page'
+import AshCalculator from './page/ash-calculator.tsx/page'
 
 function App() {
 
   return (
     <>
-      <FleetConfigPage />
+      {/* <FleetConfigPage /> */}
+      <AshCalculator />
     </>
   )
 }
