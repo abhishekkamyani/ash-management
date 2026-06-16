@@ -9,7 +9,7 @@ type Props = {
 
 export default function Header({ inputs, onChange, capacityUtilization }: Props) {
   return (
-    <header className="w-full pb-6 mb-6 border-b border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <header className="w-full pb-1 mb-4 border-b border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-6">
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">Ash Study Calculator</h1>
       </div>
@@ -31,7 +31,7 @@ export default function Header({ inputs, onChange, capacityUtilization }: Props)
         <div className="bg-white rounded-xl px-5 py-3 border border-slate-200 shadow-xs">
           <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">Capacity Utilization</span>
           <span className={`text-2xl font-black block mt-1 ${capacityUtilization > 100 ? 'text-amber-600' : 'text-emerald-600'}`}>
-            {capacityUtilization.toFixed(1)}%
+            {capacityUtilization.toFixed(0)}%
           </span>
         </div>
       </div>

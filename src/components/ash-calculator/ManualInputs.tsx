@@ -14,14 +14,14 @@ export default function ManualInputs({ inputs, onChange }: Props) {
   ];
 
   return (
-    <section className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs">
+    <section className="bg-white rounded-xl border border-slate-200 p-3 pt-1 shadow-xs">
       <div className="mb-4">
-        <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wide md:text-lg">3. Manual Inputs Strategy</h2>
+        <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wide md:text-lg">3. Dumper Strategy Selection</h2>
         <p className="text-sm text-slate-400 mt-0.5">Input targeted overrides per vehicle asset block grouping.</p>
       </div>
       <div className="space-y-4 text-base">
         {TRIPS.map((t) => (
-          <div key={t.name} className="flex justify-between items-center gap-4">
+          <div key={t.name} className="flex justify-between items-center gap-4 border-b border-slate-200 pb-2 last:border-b-0 last:pb-0">
             <label className="font-semibold text-slate-700">{t.label}</label>
             <div className="relative flex items-center">
               <input

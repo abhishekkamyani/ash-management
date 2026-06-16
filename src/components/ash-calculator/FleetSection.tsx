@@ -8,7 +8,7 @@ type Props = {
 
 export default function FleetSection({ inputs, onChange }: Props) {
   return (
-    <section className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs md:col-span-2">
+    <section className="bg-white rounded-xl border border-slate-200 p-3 pt-1 shadow-xs md:col-span-2">
       <div className="mb-4">
         <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wide md:text-lg">1. Dumper Fleet Capacities</h2>
         <p className="text-sm text-slate-400 mt-0.5">Define equipment sizing matrix parameters and operational units.</p>
@@ -20,7 +20,7 @@ export default function FleetSection({ inputs, onChange }: Props) {
             <tr className="bg-slate-50 border-b border-slate-200 text-slate-500 font-bold text-xs uppercase tracking-wider">
               <th className="p-3.5">Dumper Type</th>
               <th className="p-3.5 text-right w-36">Qty (#)</th>
-              <th className="p-3.5 text-right w-36">Capacity (Tons)</th>
+              <th className="p-3.5 text-right w-36">Unit Capacity (Tons)</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-200 text-base font-medium">

@@ -64,17 +64,17 @@ export default function AshCalculator() {
   const totalDumpersDeployed = type3TotalDumpers + type2TotalDumpers + type1TotalDumpers;
 
   return (
-    <div className="w-full min-h-screen px-4 py-6 font-sans antialiased bg-slate-50 text-slate-800">
+    <div className="w-full min-h-screen px-4 pt-2 font-sans antialiased bg-slate-50 text-slate-800">
       <Header inputs={inputs} onChange={handleInputChange} capacityUtilization={capacityUtilization} />
 
-      <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-2 items-start">
+        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-2">
           <FleetSection inputs={inputs} onChange={handleInputChange} />
           <CycleVariables inputs={inputs} onChange={handleInputChange} />
           <ManualInputs inputs={inputs} onChange={handleInputChange} />
         </div>
 
-        <aside className="lg:col-span-4 space-y-6">
+        <aside className="lg:col-span-4 space-y-3 h-full flex flex-col">
           <ResultsChain
             totalFleetCapacity={totalFleetCapacity}
             duration={duration}
@@ -85,12 +85,12 @@ export default function AshCalculator() {
 
           <TripTable
             inputs={inputs}
-            type1Qty={type1Qty}
-            type2Qty={type2Qty}
-            type3Qty={type3Qty}
             type1TotalDumpers={type1TotalDumpers}
             type2TotalDumpers={type2TotalDumpers}
             type3TotalDumpers={type3TotalDumpers}
+            type1Qty={type1Qty}
+            type2Qty={type2Qty}
+            type3Qty={type3Qty}
             totalQtyLifted={totalQtyLifted}
             totalDumpersDeployed={totalDumpersDeployed}
           />

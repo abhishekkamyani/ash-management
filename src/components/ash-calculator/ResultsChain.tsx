@@ -8,8 +8,8 @@ type Props = {
 
 export default function ResultsChain({ totalFleetCapacity, duration, totalCycleTime, noOfTripsPerDayPerDumper, ashLiftingCapacity }: Props) {
   return (
-    <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-      <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-4">Calculated Outputs Chain</h3>
+    <div className="bg-white rounded-xl p-3 pt-1 border border-slate-200 shadow-sm">
+      <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wide md:text-lg mb-4">Calculated Outputs Chain</h2>
 
       <div className="space-y-4 text-base">
         <div className="flex justify-between items-center pb-2.5 border-b border-slate-100">
@@ -41,7 +41,7 @@ export default function ResultsChain({ totalFleetCapacity, duration, totalCycleT
             <span className="block font-semibold text-slate-700">No. of Trips/day/dumper</span>
             <span className="text-xs text-slate-400">Rotation constraints per vehicle</span>
           </div>
-          <span className="text-lg font-bold text-slate-900">{noOfTripsPerDayPerDumper.toFixed(2)} <span className="text-xs font-normal text-slate-400">Trips/d</span></span>
+          <span className="text-lg font-bold text-slate-900">{noOfTripsPerDayPerDumper.toFixed(0)} <span className="text-xs font-normal text-slate-400">Trips/d</span></span>
         </div>
 
         <div className="mt-4 p-4 bg-blue-50/50 rounded-xl border border-blue-100">
